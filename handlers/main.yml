@@ -1,0 +1,7 @@
+---
+# handlers file for ansible-gnome_shell
+
+- name: reload gnome-shell
+  command: killall -HUP gnome-shell
+  become: yes
+  become_user: "{{ gnome_extension_owner }}"

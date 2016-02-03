@@ -1,0 +1,8 @@
+---
+# defaults file for ansible-gnome_shell
+# gnome shell extension site URL
+GNOME_SITE: https://extensions.gnome.org
+
+gnome_extension_path: "/usr/share/gnome-shell/extensions/"
+gnome_extension_owner: "root"
+gnome_shell_extensions: []
