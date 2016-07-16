@@ -1,4 +1,4 @@
-virtualbox
+gnome shell
 ==========
 
 Installs gnome-shell and adds module to manage gnome-shell extensions
