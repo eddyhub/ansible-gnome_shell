@@ -1,11 +1,6 @@
 ---
 # tasks file for ansible-gnome_shell
 
-- name: Install gnome-shell
-  package:
-    name=gnome-shell
-    state=latest
-
 - name: Install extensions
   gnome_shell_extension:
     id="{{ item }}"
@@ -13,4 +8,4 @@
   become: yes
   become_user: "{{ gnome_extension_owner }}"
   with_items: "{{ gnome_shell_extensions }}"
-  notify: reload gnome-shell
+  #notify: reload gnome-shell
